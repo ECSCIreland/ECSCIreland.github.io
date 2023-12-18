@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Backdoor CTF 2023 Web Challenges
