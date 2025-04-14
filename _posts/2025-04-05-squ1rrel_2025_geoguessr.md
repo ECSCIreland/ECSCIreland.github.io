@@ -60,13 +60,13 @@ And in the end, that's all that matters.
 
 The author of `Geoguessr` dared to challenge the status quo. To attempts feats never yet seen before in OSINT. To go beyond the limits of the medium, to achieve what is undoubtedly their magnum opus.
 
-![AJ's Apology]({{ site.baseurl }}/images/squi1rrel_2025/aj-apology.png)
+![AJ's Apology]({{ site.baseurl }}/images/squ1rrel2025/aj-apology.png)
 
 An image is worth a thousand words, so I won't explain the greatness of `pics.pdf`. Instead, I will show you.
 
-<img src="{{ site.baseurl }}/images/squi1rrel_2025/page1.png" alt="Page 1" title="Base64 encoded text Page 1" width=500>
-<img src="{{ site.baseurl }}/images/squi1rrel_2025/page2.png" alt="Page 2" title="Base64 encoded text Page 2" width=500>
-<img src="{{ site.baseurl }}/images/squi1rrel_2025/page3.png" alt="Page 3" title="Base64 encoded text Page 3" width=500>
+<img src="{{ site.baseurl }}/images/squ1rrel2025/page1.png" alt="Page 1" title="Base64 encoded text Page 1" width=500>
+<img src="{{ site.baseurl }}/images/squ1rrel2025/page2.png" alt="Page 2" title="Base64 encoded text Page 2" width=500>
+<img src="{{ site.baseurl }}/images/squ1rrel2025/page3.png" alt="Page 3" title="Base64 encoded text Page 3" width=500>
 
 ### Part 2 - Foreshadowing
 ---
@@ -82,7 +82,7 @@ To confirm our hypothesis, let us transcribe and attempt to decode the first lin
 
 To save us the effort, we shall first try using OCR. For this, I will be using `Claude 3.7 Sonnet`, although other OCR such as Mistral, AWS Textract, Tesseract, or even Google Lens could be used.
 
-![Claude OCR]({{ site.baseurl }}/images/squi1rrel_2025/claude-ocr-first-line.png "Claude OCR")
+![Claude OCR]({{ site.baseurl }}/images/squ1rrel2025/claude-ocr-first-line.png "Claude OCR")
 
 `UkIGRhAyAABXRUJQVlA4IAgyAACwrACdASpAAb0APo02lUelIgTjsbe9gKARjWcAzYu2/xJ/U+CPmD+tSC7h+pnvT+P0oX7Z81f7rtB9n/1HoHe8H4L0apon3pqDf4DhmaAHlAf73k5/`
 
@@ -112,26 +112,26 @@ Decoded: `RIFF????WEBP`
 ### Part 3 - The beginning
 ---
 
-![Anyone fancy reading a lot of Base64? - sr89]({{ site.baseurl }}/images/squi1rrel_2025/sr89-anyone-fancy-reading-base64.png)
-![I love Base64 - BlankAmber]({{ site.baseurl }}/images/squi1rrel_2025/blankamber-i-love-base64.png)  
+![Anyone fancy reading a lot of Base64? - sr89]({{ site.baseurl }}/images/squ1rrel2025/sr89-anyone-fancy-reading-base64.png)
+![I love Base64 - BlankAmber]({{ site.baseurl }}/images/squ1rrel2025/blankamber-i-love-base64.png)  
 *Take note of the timestamps*
 
 Team Ireland's first attempt was bravely undertaken by sr89.  
 They OCR'd the whole thing, and were able to produce this image:  
-![sr89's brave attempt]({{ site.baseurl }}/images/squi1rrel_2025/sr89-first-ocr-decoded.png "SR89's brave attempt")
+![sr89's brave attempt]({{ site.baseurl }}/images/squ1rrel2025/sr89-first-ocr-decoded.png "SR89's brave attempt")
 
 Upon seeing this, we all thought we must be close.  
 The background looks like it could contain a door, or perhaps it depicts a porch from a [Ring camera](https://en.wikipedia.org/wiki/Ring_(company))?
 
 Some insightful statements kindly contributed by m0z:  
-![Almost there guys 😊]({{ site.baseurl }}/images/squi1rrel_2025/m0z-a-few-more-corrections.png)
+![Almost there guys 😊]({{ site.baseurl }}/images/squ1rrel2025/m0z-a-few-more-corrections.png)
 
 To allow the OCR to perform better, sr89 cleaned the PNGs using advanced photographic manipulation techniques.  
 Exhibit A:  
-![Page 1 Cleaned]({{ site.baseurl }}/images/squi1rrel_2025/sr89-page1-cleaned.png)
+![Page 1 Cleaned]({{ site.baseurl }}/images/squ1rrel2025/sr89-page1-cleaned.png)
 
 After many hours spent cleaning and OCR'ing, sr89 decided to get some insight from the organisers:  
-![Organiser Insight]({{ site.baseurl }}/images/squi1rrel_2025/sr89-ticket.png)
+![Organiser Insight]({{ site.baseurl }}/images/squ1rrel2025/sr89-ticket.png)
 
 > some errors
 
@@ -143,17 +143,17 @@ Many hours of OCR'ing later, and we had finally had enough.
 It is clear that OCR is bad at transcribing tiny Base64 characters, so we opted for a more innovative approach: manual labour.
 
 The three pages were combined, cleaned, and split into 15 equally-sized chunks.  
-![Chunk JPGs]({{ site.baseurl }}/images/squi1rrel_2025/chunks.png)
+![Chunk JPGs]({{ site.baseurl }}/images/squ1rrel2025/chunks.png)
 
 Each chunk contained ~10 lines each. Since they were chunked programmatically, each chunk `i` contained 20 pixels of the top of chunk `i+1` to account for any issues with half of a line being visible.
 
-![Chunk 0]({{ site.baseurl }}/images/squi1rrel_2025/chunk_0.jpg)
+![Chunk 0]({{ site.baseurl }}/images/squ1rrel2025/chunk_0.jpg)
 
 Next up was finding any willing volunteers. A desperate plea was sent out to those on the team 🙏  
-![Desperate plea]({{ site.baseurl }}/images/squi1rrel_2025/blankamber-desperate-plea.png)
+![Desperate plea]({{ site.baseurl }}/images/squ1rrel2025/blankamber-desperate-plea.png)
 
 These brave soldiers who dedicated their time to transcribing these chunks were known as *Chunkers*.  
-![Info for chunkers]({{ site.baseurl }}/images/squi1rrel_2025/blankamber-info-for-chunkers.png)
+![Info for chunkers]({{ site.baseurl }}/images/squ1rrel2025/blankamber-info-for-chunkers.png)
 
 Each chunk was __methodically__ transcribed. Half-way through we unlocked a powerful technique which we coined the "CTRL F OCR Tactic". It was a method in which we could take a chunk that we knew was *mostly* right (i.e. one transcribed using OCR), and then used `CTRL F` to identify and correct any errors. Here is a demo of it:  
 
@@ -162,7 +162,7 @@ https://github.com/user-attachments/assets/2adbdcc9-eebb-46c9-8044-ab732f17bcad
 Using `CTRL F` while manually transcribing the image highlighted the OCR'd text when it was correct, and would cause the highlight to vanish when there was an error in the OCR'd chunk. This was less prone to error than transcribing entirely manually.
 
 After all this checking, we were confident we would have the correct image. But, alas...
-![Manual is also bad]({{ site.baseurl }}/images/squi1rrel_2025/manual-is-also-bad.png)
+![Manual is also bad]({{ site.baseurl }}/images/squ1rrel2025/manual-is-also-bad.png)
 
 Somehow after going through the entire three pages manually, the decoded image was STILL a mess.
 
@@ -171,19 +171,19 @@ Somehow after going through the entire three pages manually, the decoded image w
 
 Morale was at an all-time low. Many many total hours spent reading Base64, and yet seemingly we had only gone backwards. In a last ditch effort, we decided to proofread.
 
-![Proofreading Guide]({{ site.baseurl }}/images/squi1rrel_2025/blankamber-proofreading-guide.png)
+![Proofreading Guide]({{ site.baseurl }}/images/squ1rrel2025/blankamber-proofreading-guide.png)
 
 Although manual transcription is a little less prone to error than OCR, we thought it could be entirely possible that some errors would slip in. Some characters, such as O and 0 looked especially similar, so it was easy to mess up. It's also possible some of our volunteers were [under the influence of alcohol](https://xkcd.com/323/) which may have had dubious effect on their ability to read Base64 off a screen.  
-![12throckyou Wisdom]({{ site.baseurl }}/images/squi1rrel_2025/12throckyou-to-sober.png)
+![12throckyou Wisdom]({{ site.baseurl }}/images/squ1rrel2025/12throckyou-to-sober.png)
 
 Many ounces of effort, and it felt like we could be making some progress.  
-![Improvement?]({{ site.baseurl }}/images/squi1rrel_2025/blankamber-maybe-improvement.png)
+![Improvement?]({{ site.baseurl }}/images/squ1rrel2025/blankamber-maybe-improvement.png)
 
 Adam, our residential OSINT God, noticed what appeared to be a face depicted in the image.  
-![Face?]({{ site.baseurl }}/images/squi1rrel_2025/adam-face.png)
+![Face?]({{ site.baseurl }}/images/squ1rrel2025/adam-face.png)
 
 After some more proofreading, the face had vanished! Perhaps we had been led astray...
-![No more face :(]({{ site.baseurl }}/images/squi1rrel_2025/blankamber-no-more-face.png)
+![No more face :(]({{ site.baseurl }}/images/squ1rrel2025/blankamber-no-more-face.png)
 
 But hope was not lost just yet. Introducing: the distorted dog.
 
@@ -191,10 +191,10 @@ But hope was not lost just yet. Introducing: the distorted dog.
 ---
 
 As the image seemed so far from readable, we suspected that we were very far from the real thing. This led to us experimenting with the *distorted dog*, a simple WEBP of a dog.  
-![Distorted dog]({{ site.baseurl }}/images/squi1rrel_2025/blankamber-distorted-dog-uno.png)
+![Distorted dog]({{ site.baseurl }}/images/squ1rrel2025/blankamber-distorted-dog-uno.png)
 
 Despite only one Base64 character being changed, a lot of data got distorted. By changing a different Base64 character, it was possible for the entire image to be rendered unreadable.  
-![Distorted dog 2]({{ site.baseurl }}/images/squi1rrel_2025/blankamber-distorted-dog-dos.png)
+![Distorted dog 2]({{ site.baseurl }}/images/squ1rrel2025/blankamber-distorted-dog-dos.png)
 
 This was a massive breakthrough, as it gave us hope that we were close to the solution.
 
@@ -205,20 +205,20 @@ The CTRL F technique proved valuable, but if both the OCR'd text and the volunte
 
 Previously, we had dabbled in overlaying our transcribed data over the real thing to identify errors. But this proved difficult due to the PDF being a photograph rather than a screenshot, resulting in distortion (such as skewing) that was difficult to correct.
 
-![sr89's overlap attempt]({{ site.baseurl }}/images/squi1rrel_2025/sr89-overlap.png)
+![sr89's overlap attempt]({{ site.baseurl }}/images/squ1rrel2025/sr89-overlap.png)
 
 However, this was before we had __**Adam**__—the OSINT prodigy.
 
-![Thank you Adam]({{ site.baseurl }}/images/squi1rrel_2025/adam-solves-all-our-problems.png)
+![Thank you Adam]({{ site.baseurl }}/images/squ1rrel2025/adam-solves-all-our-problems.png)
 
 Within fractions of a second (slight hyperbole), Adam was able to perfectly clean the photographs and overlay our text on top:  
-![Wow]({{ site.baseurl }}/images/squi1rrel_2025/adam-wow.png)
+![Wow]({{ site.baseurl }}/images/squ1rrel2025/adam-wow.png)
 
 Through this technique, Adam was able to quickly identify errors by seeing where the black and red misaligned.  
-![Adam example]({{ site.baseurl }}/images/squi1rrel_2025/adam-example.png)
+![Adam example]({{ site.baseurl }}/images/squ1rrel2025/adam-example.png)
 
 An hour later and Adam had identified countless more errors. This led to a **MAJOR** breakthrough!  
-![Breakthrough]({{ site.baseurl }}/images/squi1rrel_2025/major-breakthrough.png)
+![Breakthrough]({{ site.baseurl }}/images/squ1rrel2025/major-breakthrough.png)
 
 We could finally see something: a tree, that we knew for sure was not a hallucination.
 
@@ -227,7 +227,7 @@ We could finally see something: a tree, that we knew for sure was not a hallucin
 
 From this point, morale was high. We knew exactly what we had to do... wait for Adam to find all the errors.
 
-![Final image]({{ site.baseurl }}/images/squi1rrel_2025/final-image.png)
+![Final image]({{ site.baseurl }}/images/squ1rrel2025/final-image.png)
 
 👏👏👏👏👏👏👏👏👏👏
 
@@ -237,15 +237,15 @@ From this point, morale was high. We knew exactly what we had to do... wait for 
 Wait, this is an OSINT challenge? I completely forgot.
 
 Anyways... we quickly caught on that it was *probably* looking for the name of a rock climbing route.  
-![Deduction]({{ site.baseurl }}/images/squi1rrel_2025/12throckyou-deduction.png)
+![Deduction]({{ site.baseurl }}/images/squ1rrel2025/12throckyou-deduction.png)
 
 From there, we narrowed down some climbs to check by looking at routes near Vanderbilt University ~~and looking at the author's Instagram~~.
 
 Adam did some ✨magic✨ (Google image searching & sifting through climbing forums) and worked out that it was the Creature Feature route.  
-![Adam wow 2.0]({{ site.baseurl }}/images/squi1rrel_2025/adam-wtf.png)
+![Adam wow 2.0]({{ site.baseurl }}/images/squ1rrel2025/adam-wtf.png)
 
 From there, you have to use a legendary OSINT technique called adding extra whitespace at the end of the flag.  
-![what??]({{ site.baseurl }}/images/squi1rrel_2025/adam-wtf-3.png)
+![what??]({{ site.baseurl }}/images/squ1rrel2025/adam-wtf-3.png)
 
 ~~The organisers later fixed the flag.~~
 
